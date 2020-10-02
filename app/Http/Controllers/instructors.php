@@ -14,7 +14,8 @@ class instructors extends Controller
           $Instructor->courseOne_name=$req->courseOne_name;
           $Instructor->courseTow_name=$req->courseTow_name;
     
-         echo   $Instructor->save();
+          $Instructor->save();
+        return  redirect('/welcome');
 
     }
 }

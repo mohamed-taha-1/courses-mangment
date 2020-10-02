@@ -66,21 +66,35 @@
                     opacity: 1;
                     right: 0;
                 }
-
+/* 
                 .btn{
-                    display:inlin-block;
-                }
+                    
+                    background-color: #f4511e;
+                    border: none;
+                    color: #FFFFFF;
+                } */
+
+               
         </style>
     </head>
     <body class="antialiased">
+        <div>
+        <a href="{{ url('logout') }}" class="btn btn-xs btn-info pull-right">
+                        <button class="btn">
+                            log out  
+                        </button>
+                </a>
+        
+        </div>
        <div  class="elements">
+     
             <h1 class="main-text">
 
-                welcome to  courses managment system 
+                welcome {{session('user')}} to  courses managment system 
             </h1>
             <div>
               <a href="{{ url('courses') }}" class="btn btn-xs btn-info pull-right">
-                     <button class="button btn">
+                     <button class="button ">
                      <span>Add  new Course</span>
                            
                       </button>
@@ -89,7 +103,7 @@
        
             <div>
                         <a href="{{ url('student') }}" class="btn btn-xs btn-info pull-right">
-                                <button class="button btn">
+                                <button class="button ">
                                 
                                     <span>  Add   Student  </span>
                                 </button>
@@ -99,7 +113,7 @@
               <div>
               
                         <a href="{{ url('instructor') }}" class="btn btn-xs btn-info pull-right">
-                                <button class="button btn">
+                                <button class="button ">
                                 <span>Add  Instructor</span>
                                     
                                 </button>
@@ -109,5 +123,6 @@
 
 
         </div>
+        
     </body>
 </html>

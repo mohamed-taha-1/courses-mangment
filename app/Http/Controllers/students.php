@@ -15,7 +15,9 @@ class students extends Controller
         
          
     
-         echo  $Student->save();
+         $Student->save();
+         return  redirect('/welcome');
+      
 
     }
 }

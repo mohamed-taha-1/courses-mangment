@@ -15,8 +15,12 @@ class courses extends Controller
           $Course->room=$req->room;
 
           $Course->course_name=$req->course_name;
+
+
     
-         echo  $Course->save();
+          $Course->save();
+
+          return  redirect('/welcome');
 
     }
 }
