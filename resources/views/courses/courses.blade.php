@@ -12,7 +12,7 @@
     Create page to save courses with its details (instructor, room, price, parent course,
      students, and grades of course, start date, days of course, end date).
   -->
-<form action="submit" method="post">
+<form action="/courses/submit" method="post">
      @csrf
      <h1 style="color:blue; text-align: center;">  Add   Course Information  </h1>
 

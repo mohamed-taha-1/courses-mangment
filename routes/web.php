@@ -23,12 +23,12 @@ Route::get('', function () {
 });
 //********************************************************courses page***********************
 Route::view('courses', 'courses.courses');
-// Route::post('submit', 'App\Http\Controllers\courses@save');
+Route::post('courses/submit', 'App\Http\Controllers\courses@save');
 
 //************************* */ student  routes *************
 Route::view('student', 'student.student');
-// Route::post('submit', 'App\Http\Controllers\students@save');
+Route::post('students/submit', 'App\Http\Controllers\students@save');
 
 // *****************instructor routs************
 Route::view('instructor', 'instructor.instructor');
-Route::post('submit', 'App\Http\Controllers\instructors@save');
+Route::post('instructors/submit', 'App\Http\Controllers\instructors@save');
