@@ -14,24 +14,18 @@
   -->
 <form action="submit" method="post">
      @csrf
-     <h1 style="color:blue; text-align: center;">  Add   Course Information  </h1>
+    <h1 style="color:blue; text-align: center;">  Add   Student  </h1>
 
     <div class="form-group">
           <input type="text" class="form-control" placeholder="course name "  name="course_name">
           <br>  
 
-          <input type="text" class="form-control" placeholder="instructor name"  name="instructor">
-          <br>
-          <input type="number" class="form-control" placeholder="Price"  name="price">
-          <br>
-
-          <input type="text" class="form-control" placeholder="Parent cource "  name="parent_course">
-          <br>
-          <input type="number" class="form-control" placeholder="room "  name="room">
+       
+          <input type="number" class="form-control" placeholder="student ID"  name="student_id">
           <br>
 
-
-          <input type="number"  placeholder="grade" class="form-control" name="grade">
+        
+          <input type="number" class="form-control" placeholder="course grade "  name="course_grade">
           <br>
           <button type="submit" class="form-control" class="btn btn-primary  ">Submit</button>
 </div>

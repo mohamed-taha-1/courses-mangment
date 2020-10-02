@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\course;
+use App\Models\course;
 class courses extends Controller
 {
     function save(Request $req)
@@ -14,7 +14,7 @@ class courses extends Controller
           $Course->parent_course=$req->parent_course;
           $Course->room=$req->room;
 
-          $Course->name=$req->name;
+          $Course->course_name=$req->course_name;
     
          echo  $Course->save();
 

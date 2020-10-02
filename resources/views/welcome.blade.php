@@ -20,26 +20,94 @@
                 text-aligne:center;
                 color:black;
             }
+
+            .elements{
+                text-align: center;
+                color:blude;
+            }
+
+            
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            }
+
+            .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            }
+
+                .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                }
+
+                .button:hover span {
+                padding-right: 25px;
+                }
+
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+
+                .btn{
+                    display:inlin-block;
+                }
         </style>
     </head>
     <body class="antialiased">
-       <div>
+       <div  class="elements">
             <h1 class="main-text">
 
                 welcome to  courses managment system 
             </h1>
-            <a href="{{ url('courses') }}" class="btn btn-xs btn-info pull-right">
-                     <button>
-                           add  new course
+            <div>
+              <a href="{{ url('courses') }}" class="btn btn-xs btn-info pull-right">
+                     <button class="button btn">
+                     <span>Add  new Course</span>
+                           
                       </button>
               </a>
-                     <!-- <div class="form-group row mb-0">
-                         <div class="col-md-6 offset-md-4">
-                             <button type="submit" class="btn btn-primary">
-                                Add New Course
-                             </button>
-                         </div>
-                    </div> -->
+            </div>
+       
+            <div>
+                        <a href="{{ url('student') }}" class="btn btn-xs btn-info pull-right">
+                                <button class="button btn">
+                                
+                                    <span>  Add   Student  </span>
+                                </button>
+                        </a>
+              </div>
+
+              <div>
+              
+                        <a href="{{ url('instructor') }}" class="btn btn-xs btn-info pull-right">
+                                <button class="button btn">
+                                <span>Add  Instructor</span>
+                                    
+                                </button>
+                        </a>
+              
+              </div>
+
+
         </div>
     </body>
 </html>
